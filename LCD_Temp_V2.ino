@@ -1,6 +1,11 @@
 #include <LiquidCrystal.h>
 #include <Servo.h>
 
+// Function prototyping
+void servoControl(int *readings);
+void setLEDColor(int tempC);
+int fadeTo(int current, int target);
+
 // Temp
 int Vo;
 float R1 = 10000;
